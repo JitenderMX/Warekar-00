@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test | M.R. Warerkar & Associates Pvt. Ltd.</title>
+    <!-- Website Icon  -->
+    <link rel="Icon" href="image/favicon.png">
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta property="og:title" content="Armonia" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="image/logo-share.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Armonia" />
+
+
+    <!-- bootstrap Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <!-- style Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- responsive Css -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- fontawesome Icon  -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet" />
+
+    <!-- AOS CSS -->
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+
+    <!-- Slick slider Css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <style>
+        .wrapper {
+            max-width: 1440px;
+            margin: auto;
+        }
+
+        /* Default slide */
+        .center-slider .slick-slide {
+            background-color: #b32532;
+            color: #FFF;
+            height: 200px;
+            min-height: 400px;
+            margin: 0 15px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0.7);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .center-slider .slick-slide,
+        .center-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned)~.slick-cloned[aria-hidden="true"] {
+            transform: scale(0.7, 0.7);
+            transition: all 0.4s ease-in-out;
+        }
+
+        /* Active center slide (You can change anything here for cenetr slide)*/
+        .center-slider .slick-center,
+        .center-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"])+.slick-cloned[aria-hidden="true"] {
+            transform: scale(1.5);
+            background-color: #000000;
+        }
+
+        .center-slider .slick-current.slick-active {
+            transform: scale(1.2, 1.2);
+            background-color: #000000;
+        }
+
+        .center-slider .slick-next,
+        .center-slider .slick-prev {
+            z-index: 5;
+        }
+
+        .center-slider .slick-next {
+            right: 15px;
+        }
+
+        .center-slider .slick-prev {
+            left: 15px;
+        }
+
+        .center-slider .slick-next:before,
+        .center-slider .slick-prev:before {
+            color: #000;
+            font-size: 26px;
+        }
+
+        .center-arrow {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            transform: translateY(-50%);
+        }
+
+        .center-arrow .far {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid var(--th-color-3);
+            color: var(--th-color-3);
+            background-color: var(--th-color-2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body id="home-page" class="">
+
+    <div class="wrapper">
+        <div class="center-slider">
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+            <div>Slide 4</div>
+            <div>Slide 5</div>
+            <div>Slide 6</div>
+        </div>
+        <div class="center-arrow">
+            <div id="center-arrow-prev">
+                <i class="far fa-arrow-left"></i>
+            </div>
+            <div id="center-arrow-next">
+                <i class="far fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Js Script File -->
+
+    <!-- ========== Bootstrap Js ========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ========== jquery Js ========== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ========== AOS Js ========== -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+    <!-- Slick Js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- ========== main Js ========== -->
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.center-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: true,
+                arrows: false,
+                dots: false,
+                speed: 300,
+                centerPadding: '20px',
+                infinite: true,
+                autoplaySpeed: 5000,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+            $('#center-arrow-prev').on('click', function () {
+                $('.center-slider').slick('slickPrev');
+            });
+
+            $('#center-arrow-next').on('click', function () {
+                $('.center-slider').slick('slickNext');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
