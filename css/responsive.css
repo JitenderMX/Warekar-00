@@ -264,6 +264,24 @@
 /* Small devices (576px and down) */
 
 @media screen and (max-width: 576px) {
+    .carousel-item {
+        height: 100%;
+        background-position: top left;
+        background-repeat: no-repeat ;
+        background-size: ;
+    }
+    .home-ban-1{
+        background: linear-gradient(#00000064, #00000064), url(../image/home-banner-1-mob.png);
+    }
+    .home-ban-2{
+        background: linear-gradient(#00000064, #00000064), url(../image/home-banner-2-mob.png);
+    }
+    .home-ban-3{
+        background: linear-gradient(#00000064, #00000064), url(../image/home-banner-3-mob.png);
+    }
+    .home-ban-4{
+        background: linear-gradient(#00000064, #00000064), url(../image/home-banner-4-mob.png);
+    }
 
     .th-h1 {
         font-size: 32px;

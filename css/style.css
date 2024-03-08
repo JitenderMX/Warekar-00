@@ -383,8 +383,20 @@ section {
 .carousel-item {
     height: 100%;
     background-position: center center;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat ;
     background-size: cover !important;
+}
+.home-ban-1{
+    background: linear-gradient(#00000064, #00000064), url(../image/home-banner-1.jpg);
+}
+.home-ban-2{
+    background: linear-gradient(#00000064, #00000064), url(../image/home-banner-2.jpg);
+}
+.home-ban-3{
+    background: linear-gradient(#00000064, #00000064), url(../image/home-banner-3.jpg);
+}
+.home-ban-4{
+    background: linear-gradient(#00000064, #00000064), url(../image/home-banner-4.jpg);
 }
 
 .banner .banner-inner {
